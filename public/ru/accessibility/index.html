@@ -840,6 +840,28 @@ html[dir="ltr"] .nav-brand {
     margin-left: auto !important;
     margin-right: 0 !important;
   }
+
+  /* E-commerce flat nav layout (no nav-right-group wrapper):
+     brand → menu → icons. Mirrors the runtime CSS from
+     ensureRuntimeCssInjected so layout is correct even before JS loads. */
+  html[dir="ltr"] .nav-container > .nav-brand {
+    order: -1 !important;
+  }
+  html[dir="ltr"] .nav-container > .nav-menu,
+  html[dir="ltr"] .nav-container > #navMenu {
+    order: 1 !important;
+    margin-inline-start: 0 !important;
+    margin-inline-end: 24px !important;
+    flex: 0 1 auto !important;
+  }
+  html[dir="ltr"] .nav-container > .lang-switcher,
+  html[dir="ltr"] .nav-container > .nav-ecommerce-icons {
+    order: 2 !important;
+    margin-inline-start: auto !important;
+  }
+  html[dir="ltr"] .nav-container > .nav-ecommerce-icons.nav-icons-left {
+    margin-inline-start: auto !important;
+  }
 }
 
 /* Search box button position fix for LTR pages */
@@ -3409,6 +3431,8 @@ html[dir="ltr"] .lang-switcher {
       "advanced_industrial_furniture_seo_twitter_description": "קטלוג ריהוט תעשייתי מתקדם: ארונות מגירות למשקל כבד, עמדות עבודה מודולריות ופתרונות אחסון CNC. איכות ועמידות למפעלים ותעשייה.",
       "cold_room_freezer_shelving_tonon_seo_twitter_description": "נציגות רשמית של Tonon איטליה בישראל. פתרונות מידוף מודולריים, היגייניים ואל-חלד לחדרי קירור ומקפיאים. מדפי אחסון תעשייתי למפעלים, רשתות מזון ופארמה.",
       "plastic_storage_containers_977433_seo_twitter_description": "קטלוג ארגזי פלסטיק ומיכלים לאחסון תעשייתי. מגוון פתרונות הכולל ארגזים נערמים, משטחי פלסטיק, עגלות שינוע ומיכלים גדולים למפעלים ולוגיסטיקה.",
+      "new_text_457_0": "<span><span><span>נוצר בשמחה על ידי&nbsp;</span></span></span><a href=\"https://",
+      "new_text_458_0": "<span><span><span>נוצר באמצעות&nbsp;</span></span></span><a href=\"https://",
       "new_text_455_0": "<span><span>נוצר בשמחה על ידי&nbsp;</span></span><a href=\"https://",
       "new_text_456_0": "<span><span><span>נוצר באמצעות&nbsp;</span></span></span><a href=\"https://"
     }
@@ -3605,7 +3629,7 @@ html[dir="ltr"] .lang-switcher {
       "home_h2_3": "حلول التخزين الصناعي لدينا",
       "home_h2_4": "الصناعات التي نخدمها",
       "home_h2_5": "مستعدون لترقية أنظمة التخزين الخاصة بكم؟",
-      "home_h3_6": "<font color=\"#ffffff\">حلول تخزين ذكية للأوزان الخفيفة والمتوسطة والثقيلة، منشآت كومباكتوس متقدمة، تجهيز المركبات وأثاث صناعي مخصص لشركات اللوجستيات والمصانع</font>",
+      "home_h3_6": "حلول تخزين ذكية للأوزان الخفيفة والمتوسطة والثقيلة، منشآت كومباكتوس متقدمة، تجهيز المركبات والأثاث الصناعي المخصص لشركات اللوجستيات والمصانع",
       "home_h3_7": "مقاومة للأوزان الثقيلة",
       "home_h3_8": "توفير في المساحة",
       "home_h3_9": "تخصيص كامل",
@@ -5842,6 +5866,8 @@ html[dir="ltr"] .lang-switcher {
       "advanced_industrial_furniture_seo_twitter_description": "كتالوج الأثاث الصناعي المتقدم: خزائن أدراج للأوزان الثقيلة، محطات عمل معيارية وحلول تخزين CNC. جودة ومتانة للمصانع والصناعة.",
       "cold_room_freezer_shelving_tonon_seo_twitter_description": "الوكالة الرسمية لـ Tonon إيطاليا في إسرائيل. حلول رفوف معيارية، صحية ومقاومة للصدأ لغرف التبريد والمجمدات. أرفف التخزين الصناعي للمصانع، شبكات الغذاء والصيدلة.",
       "plastic_storage_containers_977433_seo_twitter_description": "كتالوج صناديق بلاستيكية وحاويات للتخزين الصناعي. مجموعة متنوعة من الحلول تشمل صناديق قابلة للتكديس، منصات بلاستيكية، عربات نقل وحاويات كبيرة للمصانع واللوجستيات.",
+      "new_text_457_0": "<span><span><span>تم إنشاؤه بسعادة بواسطة&nbsp;</span></span></span><a href=\"https://",
+      "new_text_458_0": "<span><span><span>تم إنشاؤه بواسطة&nbsp;</span></span></span><a href=\"https://",
       "new_text_455_0": "<span><span>تم إنشاؤه بسعادة بواسطة&nbsp;</span></span><a href=\"https://",
       "new_text_456_0": "<span><span><span>تم إنشاؤه بواسطة&nbsp;</span></span></span><a href=\"https://"
     }
@@ -6038,7 +6064,7 @@ html[dir="ltr"] .lang-switcher {
       "home_h2_3": "Наши решения для промышленного хранения",
       "home_h2_4": "Отрасли, которые мы обслуживаем",
       "home_h2_5": "Готовы модернизировать ваши системы хранения?",
-      "home_h3_6": "<font color=\"#ffffff\">Умные решения для хранения легких, средних и тяжелых грузов, передовые компактус-системы, оборудование транспортных средств и индивидуальная промышленная мебель для логистических компаний и заводов</font>",
+      "home_h3_6": "Умные решения для хранения легких, средних и тяжелых грузов, современные компактные установки, оборудование для транспортных средств и промышленная мебель, изготовленная по индивидуальному заказу для логистических компаний и заводов",
       "home_h3_7": "Устойчивость к тяжелым нагрузкам",
       "home_h3_8": "Экономия места",
       "home_h3_9": "Полная индивидуальная настройка",
@@ -8275,6 +8301,8 @@ html[dir="ltr"] .lang-switcher {
       "advanced_industrial_furniture_seo_twitter_description": "Каталог передовой промышленной мебели: шкафы с ящиками для тяжелых грузов, модульные рабочие станции и решения для хранения CNC. Качество и долговечность для заводов и промышленности.",
       "cold_room_freezer_shelving_tonon_seo_twitter_description": "Официальное представительство Tonon Италия в Израиле. Модульные, гигиеничные и нержавеющие решения стеллажей для холодильных и морозильных камер. Промышленные стеллажи для заводов, продуктовых сетей и фармацевтики.",
       "plastic_storage_containers_977433_seo_twitter_description": "Каталог пластиковых ящиков и контейнеров для промышленного хранения. Широкий ассортимент решений, включающий штабелируемые ящики, пластиковые поддоны, транспортные тележки и большие контейнеры для заводов и логистики.",
+      "new_text_457_0": "<span><span><span>С радостью создано&nbsp;</span></span></span><a href=\"https://",
+      "new_text_458_0": "<span><span><span>Создано с помощью&nbsp;</span></span></span><a href=\"https://",
       "new_text_455_0": "<span><span>С радостью создано&nbsp;</span></span><a href=\"https://",
       "new_text_456_0": "<span><span><span>Создано с помощью&nbsp;</span></span></span><a href=\"https://"
     }
@@ -8471,7 +8499,7 @@ html[dir="ltr"] .lang-switcher {
       "home_h2_3": "Our industrial storage solutions",
       "home_h2_4": "The industries we serve",
       "home_h2_5": "Ready to upgrade your storage systems?",
-      "home_h3_6": "<font color=\"#ffffff\">Smart storage solutions for light, medium and heavy weight, advanced compactus systems, vehicle equipment and custom industrial furniture for logistics companies and factories</font>",
+      "home_h3_6": "Smart storage solutions for light, medium and heavy loads, advanced Compactus systems, vehicle equipment and custom industrial furniture for logistics companies and factories",
       "home_h3_7": "Heavy weight durability",
       "home_h3_8": "Space saving",
       "home_h3_9": "Full customization",
@@ -10708,6 +10736,8 @@ html[dir="ltr"] .lang-switcher {
       "advanced_industrial_furniture_seo_twitter_description": "Advanced industrial furniture catalog: heavy-duty drawer cabinets, modular workstations and CNC storage solutions. Quality and durability for factories and industry.",
       "cold_room_freezer_shelving_tonon_seo_twitter_description": "Official Tonon Italy representative in Israel. Modular, hygienic and stainless steel shelving solutions for cold rooms and freezers. Industrial storage shelves for factories, food chains and pharma.",
       "plastic_storage_containers_977433_seo_twitter_description": "Plastic boxes and containers catalog for industrial storage. Variety of solutions including stackable boxes, plastic pallets, transport carts and large containers for factories and logistics.",
+      "new_text_457_0": "<span><span><span>Happily created by&nbsp;</span></span></span><a href=\"https://",
+      "new_text_458_0": "<span><span><span>Created using&nbsp;</span></span></span><a href=\"https://",
       "new_text_455_0": "<span><span>Happily created by&nbsp;</span></span><a href=\"https://",
       "new_text_456_0": "<span><span><span>נוצר באמצעות&nbsp;</span></span></span><a href=\"https://"
     }
