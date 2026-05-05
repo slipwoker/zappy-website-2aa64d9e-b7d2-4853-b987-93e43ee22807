@@ -4721,6 +4721,23 @@ html[dir="ltr"] .zappy-products-dropdown .zappy-nav-child > a {
 }
 
 
+/* ZAPPY_PRODUCTS_DROPDOWN_DESKTOP_CENTER */
+@media (min-width: 769px) {
+  .zappy-products-dropdown > .sub-menu {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) translateY(8px) !important;
+  }
+  .zappy-products-dropdown > .sub-menu{left: auto !important;right: 50% !important;transform: translateX(50%) translateY(8px) !important;}
+  .zappy-products-dropdown:hover > .sub-menu,
+  .zappy-products-dropdown:focus-within > .sub-menu {
+    transform: translateX(-50%) translateY(0) !important;
+  }
+  .zappy-products-dropdown:hover > .sub-menu,
+  html[dir="rtl"] .zappy-products-dropdown:focus-within > .sub-menu{transform: translateX(50%) translateY(0) !important;}
+}
+
+
 /* ZAPPY_MOBILE_NAV_MENU_ITEM_PADDING */
 @media (max-width: 768px) {
   .navbar .nav-menu.active > li > a,
