@@ -11151,8 +11151,8 @@ async function loadRelatedProducts(currentProduct, t) {
 
 /* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V8 */
 (function() {
-  if (window.__zappyEcomLanguageRoutingRuntime) return;
-  window.__zappyEcomLanguageRoutingRuntime = true;
+  if (window.__zappyEcomLanguageRoutingRuntime >= 8) return;
+  window.__zappyEcomLanguageRoutingRuntime = 8;
 
   // Routing strategy: use path-based language URLs for ALL storefront pages
   // (including dynamic /product/:slug and /category/:slug). The publish
@@ -11408,10 +11408,13 @@ async function loadRelatedProducts(currentProduct, t) {
   // a separate CSS ensure step makes us robust to clean-css comment stripping +
   // declaration merging that was eating the standalone CSS injection.
   function ensureRuntimeCssInjected() {
-    if (document.getElementById('zappy-ecom-routing-runtime-css')) return;
+    var existing = document.getElementById('zappy-ecom-routing-runtime-css');
+    if (existing && existing.getAttribute('data-v') === '8') return;
+    if (existing) existing.remove();
     var style = document.createElement('style');
     style.id = 'zappy-ecom-routing-runtime-css';
     style.setAttribute('data-zappy-runtime', 'ecom-routing');
+    style.setAttribute('data-v', '8');
     style.textContent =
       '@media (min-width: 769px){' +
         'html[dir="ltr"] .nav-container > .nav-brand,body[dir="ltr"] .nav-container > .nav-brand{order:-1!important}' +
