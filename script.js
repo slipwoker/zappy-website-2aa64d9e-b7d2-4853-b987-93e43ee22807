@@ -9802,6 +9802,61 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 
 
+/* ZAPPY_PRODUCTS_MENU_LABEL_LANG_GUARD */
+(function(){
+  var RTL_RE = /[\u0590-\u05FF\u0600-\u06FF]/;
+  function isRTLPage() {
+    var lang = (typeof getCurrentLanguage === 'function' ? getCurrentLanguage() : null) || document.documentElement.lang || '';
+    return ['he','iw','ar','fa','ur'].indexOf(lang.split('-')[0].toLowerCase()) !== -1;
+  }
+  function fix() {
+    try {
+      if (isRTLPage()) return;
+      var li = document.querySelector('.zappy-products-dropdown');
+      if (!li) return;
+      var link = li.querySelector(':scope > a');
+      if (!link) return;
+      var textNode = link.firstChild;
+      if (!textNode || textNode.nodeType !== 3) return;
+      var label = textNode.textContent.trim();
+      if (!label || !RTL_RE.test(label)) { li.style.removeProperty('display'); return; }
+      var fallback = '';
+      var i18nKey = link.getAttribute('data-i18n') || '';
+      if (i18nKey && window.zappyI18n && typeof window.zappyI18n.t === 'function') {
+        var t = window.zappyI18n.t(i18nKey);
+        if (t && t !== i18nKey && !RTL_RE.test(t)) fallback = t;
+      }
+      if (!fallback) {
+        var subLink = li.querySelector('.sub-menu a[data-i18n]');
+        if (subLink) { var st = subLink.textContent.trim(); if (st && !RTL_RE.test(st)) fallback = st; }
+      }
+      if (fallback) {
+        var svg = link.querySelector('svg');
+        link.textContent = '';
+        link.appendChild(document.createTextNode(fallback + ' '));
+        if (svg) link.appendChild(svg);
+        li.style.removeProperty('display');
+      } else {
+        li.style.setProperty('display', 'none', 'important');
+      }
+    } catch(e) {}
+  }
+  try {
+    var li = document.querySelector('.zappy-products-dropdown');
+    if (li) {
+      var link = li.querySelector(':scope > a');
+      var tn = link && link.firstChild;
+      if (tn && tn.nodeType === 3 && RTL_RE.test(tn.textContent) && !isRTLPage()) {
+        li.style.setProperty('display', 'none', 'important');
+      }
+    }
+  } catch(e) {}
+  fix();
+  setTimeout(fix, 2000);
+  setTimeout(fix, 5000);
+})();
+
+
 /* ZAPPY_SECTION_ID_FROM_CLASS */
 (function(){
   function assignIds(){
