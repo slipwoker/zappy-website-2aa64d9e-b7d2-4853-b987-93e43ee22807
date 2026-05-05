@@ -1,12 +1,12 @@
 # מוצגים פתרונות אחסון ותצוגה
 
-Source: https://example.com
+Source: https://mutzagim-pitronot-achsana-veta.zappy5.app
 
 ---
 
 ## מדפי אחסון תעשייתי למפעלים מתקדמים — מוצגים פתרונות אחסון ותצוגה
 
-URL: https://example.com
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app
 Description: גלו פתרונות אחסון תעשייתי מתקדמים למפעלים וחברות לוגיסטיקה. מדפי אחסון למשקל כבד, מתקני קומפקטוס ופתרונות מותאמים אישית.
 
 מדפי אחסון תעשייתי למפעלים מתקדמים — מוצגים פתרונות אחסון ותצוגה
@@ -423,7 +423,7 @@ Happily created by Zappy
 
 ## מדפי אחסון למידוף קל ובינוני - פתרונות תעשייתיים
 
-URL: https://example.com/light-and-medium-shelving
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/light-and-medium-shelving
 Description: פתרונות מדפי אחסון תעשייתי למפעלים ולעסקים. מערכות מידוף קל ובינוני מודולריות, עמידות ומגולוונות לאחסון יעיל וחכם. מתאים למחסנים, ארכיונים ותצוגה.
 
 מידוף קל ובינוני
@@ -824,7 +824,7 @@ Happily created by Zappy
 
 ## מידוף כבד | פתרונות אחסון תעשייתי למפעלים ולוגיסטיקה
 
-URL: https://example.com/heavy-duty-shelving
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/heavy-duty-shelving
 Description: מערכות מידוף כבד למשקל גבוה - פתרונות אחסון תעשייתי למפעלים, מחסנים לוגיסטיים ומשטחים. מדפי משטחים, קנטיליבר וגלריות לעומסים כבדים.
 
 מידוף כבד | פתרונות אחסון תעשייתי למפעלים ולוגיסטיקה
@@ -1174,7 +1174,7 @@ Happily created by Zappy
 
 ## ריהוט תעשייתי מתקדם | פתרונות אחסון למפעלים
 
-URL: https://example.com/advanced-industrial-furniture
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/advanced-industrial-furniture
 Description: קטלוג ריהוט תעשייתי מתקדם: ארונות מגירות למשקל כבד, עמדות עבודה מודולריות ופתרונות אחסון CNC. איכות ועמידות למפעלים ותעשייה.
 
 ריהוט תעשייתי מתקדם | פתרונות אחסון למפעלים
@@ -1510,7 +1510,7 @@ Happily created by Zappy
 
 ## מתקני קומפקטוס | פתרונות אחסון חכם וחיסכון במקום
 
-URL: https://example.com/compactus-systems
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/compactus-systems
 Description: מערכות קומפקטוס מתקדמות לאחסון צפוף. חסכון של עד 70% בשטח הרצפה. פתרונות אחסון למשקל כבד, ארכיונים ומחסנים לוגיסטיים. תכנון והתקנה מקצועית.
 
 מתקני קומפקטוס | פתרונות אחסון חכם וחיסכון במקום
@@ -1882,7 +1882,7 @@ Enter your paragraph text...
 
 ## ארגזי פלסטיק ומיכלים לאחסון | פתרונות תעשייתיים
 
-URL: https://example.com/plastic-storage-containers-977433
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/plastic-storage-containers-977433
 Description: קטלוג ארגזי פלסטיק ומיכלים לאחסון תעשייתי. מגוון פתרונות הכולל ארגזים נערמים, משטחי פלסטיק, עגלות שינוע ומיכלים גדולים למפעלים ולוגיסטיקה.
 
 ארגזי פלסטיק ומיכלים לאחסון | פתרונות תעשייתיים
@@ -2212,7 +2212,7 @@ Happily created by Zappy
 
 ## מיכלים וארגזים אנטי סטטיים (ESD) | פתרונות אחסון לתעשייה
 
-URL: https://example.com/esd-containers
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/esd-containers
 Description: מגוון מיכלים, ארגזים וקופסאות אנטי סטטיים (ESD) להגנה על רכיבים אלקטרוניים. פתרונות אחסון ושינוע מוליכים לתעשיית ההייטק והאלקטרוניקה.
 
 מיכלים וארגזים אנטי סטטיים (ESD) | פתרונות אחסון לתעשייה
@@ -2562,7 +2562,7 @@ Happily created by Zappy
 
 ## מדפי תצוגה לסופרמקטים | פתרונות מידוף לחנויות מזון וקמעונאות
 
-URL: https://example.com/supermarket-shelving
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/supermarket-shelving
 Description: קטלוג מדפי תצוגה לסופרמקטים וחנויות נוחות. פתרונות מידוף מודולריים, מדפי גונדולה, יחידות קיר ופתרונות אחסון למשקל כבד בעיצוב אסתטי ועמיד.
 
 מדפי תצוגה לסופרמקטים | פתרונות מידוף לחנויות מזון וקמעונאות
@@ -2931,7 +2931,7 @@ Happily created by Zappy
 
 ## גלריות אחסון ורצפות גלריה | פתרונות להכפלת שטח
 
-URL: https://example.com/storage-mezzanines
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/storage-mezzanines
 Description: גלריות אחסון תעשייתיות (Mezzanines) להכפלת שטח האחסון במחסן. פתרונות אחסון למשקל כבד, תכנון מודולרי והתאמה אישית למפעלים ולוגיסטיקה.
 
 גלריות אחסון ורצפות גלריה | פתרונות להכפלת שטח
@@ -3267,7 +3267,7 @@ Happily created by Zappy
 
 ## פתרונות מידוף לעסק ולבית בצפון | מוצגים
 
-URL: https://example.com/shelving-solutions-north
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/shelving-solutions-north
 Description: פתרונות מידוף מתקדמים לעסק, למשרד ולבית בחיפה והצפון. מדפי אחסון מודולריים, חזקים וקלים להרכבה. משלוחים מהירים עד אליכם. הזמינו עכשיו ממוצגים.
 
 פתרונות מידוף לעסק ולבית בצפון | מוצגים
@@ -3585,7 +3585,7 @@ Happily created by Zappy
 
 ## פתרונות אחסון תעשייתי מקצועיים — מוצגים פתרונות אחסון ותצוגה
 
-URL: https://example.com/services
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/services
 Description: שירותי אחסון תעשייתי מקיפים: מדפי אחסון למפעלים, מתקני קומפקטוס, ריהוט לוגיסטי ופתרונות מותאמים אישית. ייעוץ והתקנה מקצועית.
 
 פתרונות אחסון תעשייתי מקצועיים — מוצגים פתרונות אחסון ותצוגה
@@ -4013,7 +4013,7 @@ Happily created by Zappy
 
 ## מדיניות פרטיות
 
-URL: https://example.com/privacy
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/privacy
 Description: מדיניות הפרטיות שלנו - כיצד אנו אוספים, משתמשים ומגנים על המידע שלכם
 
 מדיניות פרטיות
@@ -4283,7 +4283,7 @@ Description: מדיניות הפרטיות שלנו - כיצד אנו אוספי
 
 ## הצהרת נגישות
 
-URL: https://example.com/accessibility
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/accessibility
 Description: הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית
 
 הצהרת נגישות
@@ -4562,7 +4562,7 @@ Description: הצהרת הנגישות שלנו - מחויבותנו לנגיש�
 
 ## תנאי שימוש
 
-URL: https://example.com/terms
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/terms
 Description: תנאי השימוש באתר - הזכויות והחובות של המשתמשים
 
 תנאי שימוש
@@ -4860,7 +4860,7 @@ Description: תנאי השימוש באתר - הזכויות והחובות של
 
 ## זיווד רכבים | פתרונות אחסון וסדנה ניידת לרכבים מסחריים
 
-URL: https://example.com/vehicle-equipment
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/vehicle-equipment
 Description: פתרונות זיווד רכבים מתקדמים וריהוט תעשייתי נייד. מערכות מדפים, מגירות וציוד לרכבי שירות. תכנון מודולרי המותאם לכל סוגי הרכבים המסחריים.
 
 זיווד רכבים
@@ -5218,7 +5218,7 @@ Happily created by Zappy
 
 ## הסיפור שלנו ומומחיות בפתרונות אחסון — מוצגים פתרונות אחסון ותצוגה
 
-URL: https://example.com/about
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/about
 Description: למדו על מוצגים פתרונות אחסון ותצוגה - מובילים בתחום מדפי אחסון תעשייתי למפעלים ופתרונות אחסון למשקל כבד. ניסיון, מומחיות ומחויבות לאיכות.
 
 הסיפור שלנו ומומחיות בפתרונות אחסון — מוצגים פתרונות אחסון ותצוגה
@@ -5605,7 +5605,7 @@ Happily created by Zappy
 
 ## צרו קשר לפתרונות אחסון תעשייתי — מוצגים פתרונות אחסון ותצוגה
 
-URL: https://example.com/contact-us
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/contact-us
 Description: צרו קשר עם מוצגים פתרונות אחסון ותצוגה לקבלת ייעוץ מקצועי על מדפי אחסון תעשייתי למפעלים, פתרונות אחסון למשקל כבד ומתקני קומפקטוס. נשמח לעזור!
 
 צרו קשר
@@ -6018,7 +6018,7 @@ effi@mutzagim.co.il
 
 ## מערכת אחסון ורטיקלי VLM | פתרונות אחסון תעשייתי
 
-URL: https://example.com/vlm-vertical-storage
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/vlm-vertical-storage
 Description: מערכת אחסון ורטיקלי VLM - מדפי אחסון תעשייתי למפעלים המאפשרים חיסכון של עד 90% בשטח. פתרונות אחסון למשקל כבד, ייעול תהליכי ליקוט וניהול מלאי חכם.
 
 מערכת אחסון ורטיקלי VLM | פתרונות אחסון תעשייתי
@@ -6312,7 +6312,7 @@ Happily created by Zappy
 
 ## מערכת מדפים מודולרית Dalmine LS
 
-URL: https://example.com/dalmine-ls-modular-shelving
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/dalmine-ls-modular-shelving
 Description: מערכת מדפים מודולרית בתצורת קיט מבית Dalmine LS איטליה. פתרון אידיאלי לחנויות, רשתות DIY ומחסנים. משלים את מגוון פתרונות האחסון והמידוף התעשייתי שלנו.
 
 מערכת מדפים מודולרית Dalmine LS
@@ -6653,7 +6653,7 @@ Happily created by Zappy
 
 ## מידוף קירור
 
-URL: https://example.com/cold-room-shelving
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/cold-room-shelving
 Description: מערכות מידוף קירור מבית Tonon. מדפי אחסון תעשייתי למפעלים, עמידים בטמפרטורות קיצוניות, היגייניים וקלים לניקוי. פתרונות אחסון מתקדמים לחדרי קירור ומקפאים.
 
 מידוף קירור
@@ -6950,7 +6950,7 @@ Happily created by Zappy
 
 ## מדפים לחדרי קירור ומקפיאים | Tonon
 
-URL: https://example.com/cold-room-freezer-shelving-tonon
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/cold-room-freezer-shelving-tonon
 Description: נציגות רשמית של Tonon איטליה בישראל. פתרונות מידוף מודולריים, היגייניים ואל-חלד לחדרי קירור ומקפיאים. מדפי אחסון תעשייתי למפעלים, רשתות מזון ופארמה.
 
 מדפים לחדרי קירור ומקפיאים | Tonon
@@ -7272,7 +7272,7 @@ Happily created by Zappy
 
 ## מוצרים
 
-URL: https://example.com/products
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/products
 Description: המוצרים שלנו - מוצגים פתרונות אחסון ותצוגה
 
 מוצרים - מוצגים פתרונות אחסון ותצוגה
@@ -7488,7 +7488,7 @@ Description: המוצרים שלנו - מוצגים פתרונות אחסון ו
 
 ## פרטי המוצר
 
-URL: https://example.com/product/:slug
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/product/:slug
 Description: פרטי המוצר - מוצגים פתרונות אחסון ותצוגה
 
 פרטי המוצר - מוצגים פתרונות אחסון ותצוגה
@@ -7682,7 +7682,7 @@ Description: פרטי המוצר - מוצגים פתרונות אחסון ותצ
 
 ## מוצרים
 
-URL: https://example.com/category/:slug
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/category/:slug
 Description: מוצרים - מוצגים פתרונות אחסון ותצוגה
 
 מוצרים - מוצגים פתרונות אחסון ותצוגה
@@ -7900,7 +7900,7 @@ Description: מוצרים - מוצגים פתרונות אחסון ותצוגה
 
 ## עגלת קניות
 
-URL: https://example.com/cart
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/cart
 Description: עגלת הקניות שלך
 
 עגלת קניות - מוצגים פתרונות אחסון ותצוגה
@@ -8092,7 +8092,7 @@ Description: עגלת הקניות שלך
 
 ## תשלום
 
-URL: https://example.com/checkout
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/checkout
 Description: תשלום
 
 תשלום - מוצגים פתרונות אחסון ותצוגה
@@ -8467,7 +8467,7 @@ Description: תשלום
 
 ## התחברות
 
-URL: https://example.com/login
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/login
 Description: התחברות לקוחות
 
 התחברות - מוצגים פתרונות אחסון ותצוגה
@@ -8666,7 +8666,7 @@ Description: התחברות לקוחות
 
 ## החשבון שלי
 
-URL: https://example.com/account
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/account
 Description: החשבון שלי
 
 החשבון שלי - מוצגים פתרונות אחסון ותצוגה
@@ -9020,7 +9020,7 @@ Description: החשבון שלי
 
 ## ההזמנה התקבלה!
 
-URL: https://example.com/order-success
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/order-success
 Description: תודה על ההזמנה
 
 ההזמנה התקבלה! - מוצגים פתרונות אחסון ותצוגה
@@ -9236,7 +9236,7 @@ Description: תודה על ההזמנה
 
 ## מדיניות החזרות
 
-URL: https://example.com/return-policy
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/return-policy
 Description: מדיניות החזרת מוצרים - זכויותיכם להחזרה והחלפה בהתאם לחוק
 
 מדיניות החזרות - מוצגים פתרונות אחסון ותצוגה
@@ -9482,7 +9482,7 @@ Description: מדיניות החזרת מוצרים - זכויותיכם להח�
 ## Product Catalog
 
 ### סט קיט מדפים ERREX תוצרת איטליה
-URL: https://example.com/product/st-kyt-mdpym-errex-tvtsrt-aytlyh-woedyp
+URL: https://mutzagim-pitronot-achsana-veta.zappy5.app/product/st-kyt-mdpym-errex-tvtsrt-aytlyh-woedyp
 Price: 531.00 USD (sale, was 650.00 USD)
 Availability: In stock
 Brand: Dalmine
