@@ -11417,7 +11417,7 @@ async function loadRelatedProducts(currentProduct, t) {
         'html[dir="ltr"] .nav-container > .nav-brand,body[dir="ltr"] .nav-container > .nav-brand{order:-1!important}' +
         'html[dir="ltr"] .nav-container > .nav-menu,body[dir="ltr"] .nav-container > .nav-menu{order:1!important;margin-inline-start:0!important;margin-inline-end:24px!important;flex:0 1 auto!important}' +
         'html[dir="ltr"] .nav-container > .lang-switcher,body[dir="ltr"] .nav-container > .lang-switcher,html[dir="ltr"] .nav-container > .nav-ecommerce-icons,body[dir="ltr"] .nav-container > .nav-ecommerce-icons{order:2!important}' +
-        'html[dir="ltr"] .nav-container > .nav-ecommerce-icons.nav-icons-left,body[dir="ltr"] .nav-container > .nav-ecommerce-icons.nav-icons-left{margin-inline-start:0!important}' +
+        'html[dir="ltr"] .nav-container > .nav-ecommerce-icons.nav-icons-left,body[dir="ltr"] .nav-container > .nav-ecommerce-icons.nav-icons-left{margin-inline-start:auto!important}' +
         'html[dir="ltr"] .zappy-products-dropdown > a .dropdown-arrow,body[dir="ltr"] .zappy-products-dropdown > a .dropdown-arrow{display:inline-block!important;flex:0 0 auto!important;margin-inline-start:6px!important}' +
         'html[dir="ltr"] .zappy-catalog-menu,html[dir="ltr"] .zappy-catalog-menu .catalog-menu-container,html[dir="ltr"] .zappy-catalog-menu .catalog-menu-categories{direction:ltr!important}' +
         'html[dir="ltr"] .zappy-catalog-menu .catalog-menu-container{align-items:flex-start!important}' +
