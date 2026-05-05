@@ -1316,6 +1316,28 @@ html[dir="ltr"] .nav-brand {
     margin-left: auto !important;
     margin-right: 0 !important;
   }
+
+  /* E-commerce flat nav layout (no nav-right-group wrapper):
+     brand → menu → icons. Mirrors the runtime CSS from
+     ensureRuntimeCssInjected so layout is correct even before JS loads. */
+  html[dir="ltr"] .nav-container > .nav-brand {
+    order: -1 !important;
+  }
+  html[dir="ltr"] .nav-container > .nav-menu,
+  html[dir="ltr"] .nav-container > #navMenu {
+    order: 1 !important;
+    margin-inline-start: 0 !important;
+    margin-inline-end: 24px !important;
+    flex: 0 1 auto !important;
+  }
+  html[dir="ltr"] .nav-container > .lang-switcher,
+  html[dir="ltr"] .nav-container > .nav-ecommerce-icons {
+    order: 2 !important;
+    margin-inline-start: auto !important;
+  }
+  html[dir="ltr"] .nav-container > .nav-ecommerce-icons.nav-icons-left {
+    margin-inline-start: auto !important;
+  }
 }
 
 /* Search box button position fix for LTR pages */
@@ -1440,7 +1462,7 @@ html[dir="ltr"] .lang-switcher {
     <img data-placeholder="hero-1" data-context="Wide panoramic view of modern industrial warehouse with organized storage systems, metal shelving units filled with organized inventory, professional lighting showcasing efficient space utilization" src="/assets/hero-hero-1.webp" alt="Industrial storage shelves for factories - modern warehouse with organized storage systems" class="hero-img" data-element-type="image" data-element-id="img-1777908745881-yl1ybqgy6">
     <div class="container hero-content" style="direction: rtl;">
       <h1 style="font-size: 60px; color: rgb(26, 26, 26) !important;"><font color="#ffffff">Industrial storage shelving for factories that changes the rules of the game</font></h1>
-      <h3 style="color: rgb(26, 26, 26) !important;">Smart storage solutions for light, medium and heavy loads, advanced Compactus systems, vehicle equipment and custom industrial furniture for logistics companies and factories</h3>
+      <h3 style="color: rgb(26, 26, 26) !important;"><font color="#ffffff">Smart storage solutions for light, medium and heavy loads, advanced Compactus systems, vehicle equipment and custom industrial furniture for logistics companies and factories.</font></h3>
       <div class="hero-cta">
         <a href="/en/contact-us" class="btn-primary" data-element-type="button" data-element-id="btn-1777908745878-0ewxbc2qq" data-native-element="true">Contact Us</a>
         <a href="/en/services" class="btn-secondary" style="color: rgb(26, 26, 26) !important;" data-element-type="button" data-element-id="btn-1777908745878-ktpla8165" data-native-element="true">Discover Our Solutions</a>
@@ -1710,6 +1732,9 @@ html[dir="ltr"] .lang-switcher {
 })();
 </script>
     <div data-integration="accessibility:toolbar"></div>
+
+
+
 
 
 
