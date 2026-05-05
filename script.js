@@ -11149,7 +11149,7 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 
 
-/* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V7 */
+/* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V8 */
 (function() {
   if (window.__zappyEcomLanguageRoutingRuntime) return;
   window.__zappyEcomLanguageRoutingRuntime = true;
@@ -11428,13 +11428,16 @@ async function loadRelatedProducts(currentProduct, t) {
         '.nav-menu .zappy-products-dropdown:hover>.sub-menu,#navMenu .zappy-products-dropdown:hover>.sub-menu,.nav-menu .zappy-products-dropdown:focus-within>.sub-menu,#navMenu .zappy-products-dropdown:focus-within>.sub-menu{transform:translateX(-50%) translateY(0)!important}' +
       '}' +
       '@media (max-width:768px){' +
-        '.navbar .zappy-products-dropdown,nav.navbar .zappy-products-dropdown,.zappy-products-dropdown{position:relative!important}' +
-        // padding-inline-end is a logical property: it resolves to right padding
-        // in LTR and left padding in RTL — exactly the side where the absolute
-        // toggle button lives. A separate RTL override would invert that and
-        // push the link text inward, which is the indentation bug we hit.
-        '.navbar .zappy-products-dropdown > a,nav.navbar .zappy-products-dropdown > a,.zappy-products-dropdown > a{width:100%!important;min-width:0!important;padding-inline-end:56px!important;padding-inline-start:0!important;box-sizing:border-box!important}' +
-        '.navbar .zappy-products-dropdown > .mobile-submenu-toggle,nav.navbar .zappy-products-dropdown > .mobile-submenu-toggle,.zappy-products-dropdown > .mobile-submenu-toggle{display:flex!important;position:absolute!important;top:0!important;inset-inline-end:4px!important;inset-inline-start:auto!important;width:48px!important;height:44px!important;min-height:44px!important;align-items:center!important;justify-content:center!important;z-index:5!important;pointer-events:auto!important;margin:0!important;padding:0!important;background:transparent!important;border:none!important}' +
+        // Apply absolute toggle positioning to ALL dropdown parents, not just
+        // .zappy-products-dropdown. "Product Categories" and any other nav item
+        // with a .sub-menu need the same treatment. padding-inline-end is a
+        // logical property: resolves to the side where the absolute toggle lives.
+        '.nav-menu li:has(.sub-menu),.navbar li:has(.sub-menu),nav li:has(.sub-menu){position:relative!important}' +
+        '.nav-menu li:has(.sub-menu)>a,.navbar li:has(.sub-menu)>a,nav li:has(.sub-menu)>a,li:has(.sub-menu)>.menu-group-title{width:100%!important;min-width:0!important;padding-inline-end:56px!important;padding-inline-start:0!important;box-sizing:border-box!important}' +
+        '.nav-menu li:has(.sub-menu)>.mobile-submenu-toggle,.navbar li:has(.sub-menu)>.mobile-submenu-toggle,nav li:has(.sub-menu)>.mobile-submenu-toggle{display:flex!important;position:absolute!important;top:0!important;inset-inline-end:4px!important;inset-inline-start:auto!important;width:48px!important;height:44px!important;min-height:44px!important;align-items:center!important;justify-content:center!important;z-index:5!important;pointer-events:auto!important;margin:0!important;padding:0!important;background:transparent!important;border:none!important}' +
+        // Fix sub-menu text truncation: desktop sets white-space:nowrap which
+        // clips text inside the overflow:hidden mobile accordion.
+        '.sub-menu a,.sub-menu .menu-group-title{white-space:normal!important;overflow-wrap:break-word!important}' +
       '}';
     (document.head || document.documentElement).appendChild(style);
   }
