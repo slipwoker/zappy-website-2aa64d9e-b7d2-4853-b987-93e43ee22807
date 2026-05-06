@@ -11149,10 +11149,10 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 
 
-/* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V14 */
+/* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V15 */
 (function() {
-  if (window.__zappyEcomLanguageRoutingRuntime >= 14) return;
-  window.__zappyEcomLanguageRoutingRuntime = 14;
+  if (window.__zappyEcomLanguageRoutingRuntime >= 15) return;
+  window.__zappyEcomLanguageRoutingRuntime = 15;
 
   // Routing strategy: use path-based language URLs for ALL storefront pages
   // (including dynamic /product/:slug and /category/:slug). The publish
@@ -11481,7 +11481,7 @@ async function loadRelatedProducts(currentProduct, t) {
   }
 
   function scheduleMobileSubmenuRefresh() {
-    [0, 60, 160, 320].forEach(function(delay) {
+    [0, 60, 160, 320, 700, 1200, 2200].forEach(function(delay) {
       setTimeout(function() {
         ensureMobileSubmenuToggles();
         normalizeMobileSubmenuLayout();
@@ -11495,7 +11495,7 @@ async function loadRelatedProducts(currentProduct, t) {
 
     document.addEventListener('click', function(e) {
       var target = e.target && e.target.closest && e.target.closest(
-        '.mobile-toggle,.menu-toggle,.hamburger,.navbar-toggle,[aria-label="תפריט"],[aria-label="Menu"],[aria-label="menu"]'
+        '.mobile-toggle,.menu-toggle,.hamburger,.navbar-toggle,.mobile-submenu-toggle,[aria-label="תפריט"],[aria-label="Menu"],[aria-label="menu"]'
       );
       if (target) scheduleMobileSubmenuRefresh();
     }, true);
@@ -11549,12 +11549,12 @@ async function loadRelatedProducts(currentProduct, t) {
   // declaration merging that was eating the standalone CSS injection.
   function ensureRuntimeCssInjected() {
     var existing = document.getElementById('zappy-ecom-routing-runtime-css');
-    if (existing && existing.getAttribute('data-v') === '14') return;
+    if (existing && existing.getAttribute('data-v') === '15') return;
     if (existing) existing.remove();
     var style = document.createElement('style');
     style.id = 'zappy-ecom-routing-runtime-css';
     style.setAttribute('data-zappy-runtime', 'ecom-routing');
-    style.setAttribute('data-v', '14');
+    style.setAttribute('data-v', '15');
     style.textContent =
       '@media (min-width: 769px){' +
         'html[dir="ltr"] .nav-container > .nav-brand,body[dir="ltr"] .nav-container > .nav-brand{order:-1!important}' +
