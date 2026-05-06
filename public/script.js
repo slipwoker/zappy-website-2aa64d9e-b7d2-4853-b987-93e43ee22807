@@ -11149,10 +11149,10 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 
 
-/* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V8 */
+/* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V9 */
 (function() {
-  if (window.__zappyEcomLanguageRoutingRuntime >= 8) return;
-  window.__zappyEcomLanguageRoutingRuntime = 8;
+  if (window.__zappyEcomLanguageRoutingRuntime >= 9) return;
+  window.__zappyEcomLanguageRoutingRuntime = 9;
 
   // Routing strategy: use path-based language URLs for ALL storefront pages
   // (including dynamic /product/:slug and /category/:slug). The publish
@@ -11409,12 +11409,12 @@ async function loadRelatedProducts(currentProduct, t) {
   // declaration merging that was eating the standalone CSS injection.
   function ensureRuntimeCssInjected() {
     var existing = document.getElementById('zappy-ecom-routing-runtime-css');
-    if (existing && existing.getAttribute('data-v') === '8') return;
+    if (existing && existing.getAttribute('data-v') === '9') return;
     if (existing) existing.remove();
     var style = document.createElement('style');
     style.id = 'zappy-ecom-routing-runtime-css';
     style.setAttribute('data-zappy-runtime', 'ecom-routing');
-    style.setAttribute('data-v', '8');
+    style.setAttribute('data-v', '9');
     style.textContent =
       '@media (min-width: 769px){' +
         'html[dir="ltr"] .nav-container > .nav-brand,body[dir="ltr"] .nav-container > .nav-brand{order:-1!important}' +
@@ -11431,16 +11431,11 @@ async function loadRelatedProducts(currentProduct, t) {
         '.nav-menu .zappy-products-dropdown:hover>.sub-menu,#navMenu .zappy-products-dropdown:hover>.sub-menu,.nav-menu .zappy-products-dropdown:focus-within>.sub-menu,#navMenu .zappy-products-dropdown:focus-within>.sub-menu{transform:translateX(-50%) translateY(0)!important}' +
       '}' +
       '@media (max-width:768px){' +
-        // Apply absolute toggle positioning to ALL dropdown parents, not just
-        // .zappy-products-dropdown. "Product Categories" and any other nav item
-        // with a .sub-menu need the same treatment. padding-inline-end is a
-        // logical property: resolves to the side where the absolute toggle lives.
-        '.nav-menu li:has(.sub-menu),.navbar li:has(.sub-menu),nav li:has(.sub-menu){position:relative!important}' +
+        '.nav-menu li:has(.sub-menu),.navbar li:has(.sub-menu),nav li:has(.sub-menu){position:relative!important;max-width:100%!important;overflow:hidden!important}' +
         '.nav-menu li:has(.sub-menu)>a,.navbar li:has(.sub-menu)>a,nav li:has(.sub-menu)>a,li:has(.sub-menu)>.menu-group-title{width:100%!important;min-width:0!important;padding-inline-end:56px!important;padding-inline-start:0!important;box-sizing:border-box!important}' +
         '.nav-menu li:has(.sub-menu)>.mobile-submenu-toggle,.navbar li:has(.sub-menu)>.mobile-submenu-toggle,nav li:has(.sub-menu)>.mobile-submenu-toggle{display:flex!important;position:absolute!important;top:0!important;inset-inline-end:4px!important;inset-inline-start:auto!important;width:48px!important;height:44px!important;min-height:44px!important;align-items:center!important;justify-content:center!important;z-index:5!important;pointer-events:auto!important;margin:0!important;padding:0!important;background:transparent!important;border:none!important}' +
-        // Fix sub-menu text truncation: desktop sets white-space:nowrap which
-        // clips text inside the overflow:hidden mobile accordion.
-        '.sub-menu a,.sub-menu .menu-group-title{white-space:normal!important;overflow-wrap:break-word!important}' +
+        '.nav-menu .sub-menu,.navbar .sub-menu,nav .sub-menu{min-width:0!important;max-width:100%!important;box-sizing:border-box!important}' +
+        '.sub-menu a,.sub-menu .menu-group-title{white-space:normal!important;overflow-wrap:break-word!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important}' +
       '}';
     (document.head || document.documentElement).appendChild(style);
   }
