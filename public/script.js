@@ -11149,10 +11149,10 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 
 
-/* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V13 */
+/* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V14 */
 (function() {
-  if (window.__zappyEcomLanguageRoutingRuntime >= 13) return;
-  window.__zappyEcomLanguageRoutingRuntime = 13;
+  if (window.__zappyEcomLanguageRoutingRuntime >= 14) return;
+  window.__zappyEcomLanguageRoutingRuntime = 14;
 
   // Routing strategy: use path-based language URLs for ALL storefront pages
   // (including dynamic /product/:slug and /category/:slug). The publish
@@ -11480,6 +11480,52 @@ async function loadRelatedProducts(currentProduct, t) {
     });
   }
 
+  function scheduleMobileSubmenuRefresh() {
+    [0, 60, 160, 320].forEach(function(delay) {
+      setTimeout(function() {
+        ensureMobileSubmenuToggles();
+        normalizeMobileSubmenuLayout();
+      }, delay);
+    });
+  }
+
+  function installMobileMenuRefreshHooks() {
+    if (window.__zappyMobileSubmenuRefreshHooksInstalled) return;
+    window.__zappyMobileSubmenuRefreshHooksInstalled = true;
+
+    document.addEventListener('click', function(e) {
+      var target = e.target && e.target.closest && e.target.closest(
+        '.mobile-toggle,.menu-toggle,.hamburger,.navbar-toggle,[aria-label="תפריט"],[aria-label="Menu"],[aria-label="menu"]'
+      );
+      if (target) scheduleMobileSubmenuRefresh();
+    }, true);
+
+    if (!window.MutationObserver) return;
+    var observeNav = function() {
+      var nav = document.getElementById('navMenu') || document.querySelector('.nav-menu');
+      if (!nav || nav.getAttribute('data-zappy-mobile-submenu-observed') === '1') return;
+      nav.setAttribute('data-zappy-mobile-submenu-observed', '1');
+      var handleMutations = function(mutations) {
+        var shouldRefresh = mutations.some(function(mutation) {
+          if (mutation.type === 'attributes') return mutation.attributeName === 'class' || mutation.attributeName === 'style';
+          return Array.prototype.some.call(mutation.addedNodes || [], function(node) {
+            return node.nodeType === 1 && (
+              node.classList && node.classList.contains('mobile-submenu-toggle')
+              || node.querySelector && node.querySelector('.mobile-submenu-toggle')
+            );
+          });
+        });
+        if (shouldRefresh) scheduleMobileSubmenuRefresh();
+      };
+      var navObserver = new MutationObserver(handleMutations);
+      navObserver.observe(nav, { attributes: true, attributeFilter: ['class', 'style'], childList: true });
+      var childObserver = new MutationObserver(handleMutations);
+      childObserver.observe(nav, { childList: true, subtree: true });
+    };
+    observeNav();
+    setTimeout(observeNav, 500);
+  }
+
   var __zappyMobileSubmenuResizeTimer = null;
   window.addEventListener('resize', function() {
     if (__zappyMobileSubmenuResizeTimer) clearTimeout(__zappyMobileSubmenuResizeTimer);
@@ -11503,12 +11549,12 @@ async function loadRelatedProducts(currentProduct, t) {
   // declaration merging that was eating the standalone CSS injection.
   function ensureRuntimeCssInjected() {
     var existing = document.getElementById('zappy-ecom-routing-runtime-css');
-    if (existing && existing.getAttribute('data-v') === '13') return;
+    if (existing && existing.getAttribute('data-v') === '14') return;
     if (existing) existing.remove();
     var style = document.createElement('style');
     style.id = 'zappy-ecom-routing-runtime-css';
     style.setAttribute('data-zappy-runtime', 'ecom-routing');
-    style.setAttribute('data-v', '13');
+    style.setAttribute('data-v', '14');
     style.textContent =
       '@media (min-width: 769px){' +
         'html[dir="ltr"] .nav-container > .nav-brand,body[dir="ltr"] .nav-container > .nav-brand{order:-1!important}' +
@@ -11539,6 +11585,7 @@ async function loadRelatedProducts(currentProduct, t) {
 
   function patch() {
     ensureRuntimeCssInjected();
+    installMobileMenuRefreshHooks();
     patchLinks(document);
     ensureProductsChevron();
     ensureMobileSubmenuToggles();
