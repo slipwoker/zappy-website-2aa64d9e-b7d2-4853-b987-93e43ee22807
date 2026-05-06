@@ -11149,10 +11149,10 @@ async function loadRelatedProducts(currentProduct, t) {
 })();
 
 
-/* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V9 */
+/* ZAPPY_ECOM_LANGUAGE_ROUTING_RUNTIME_V10 */
 (function() {
-  if (window.__zappyEcomLanguageRoutingRuntime >= 9) return;
-  window.__zappyEcomLanguageRoutingRuntime = 9;
+  if (window.__zappyEcomLanguageRoutingRuntime >= 10) return;
+  window.__zappyEcomLanguageRoutingRuntime = 10;
 
   // Routing strategy: use path-based language URLs for ALL storefront pages
   // (including dynamic /product/:slug and /category/:slug). The publish
@@ -11409,12 +11409,12 @@ async function loadRelatedProducts(currentProduct, t) {
   // declaration merging that was eating the standalone CSS injection.
   function ensureRuntimeCssInjected() {
     var existing = document.getElementById('zappy-ecom-routing-runtime-css');
-    if (existing && existing.getAttribute('data-v') === '9') return;
+    if (existing && existing.getAttribute('data-v') === '10') return;
     if (existing) existing.remove();
     var style = document.createElement('style');
     style.id = 'zappy-ecom-routing-runtime-css';
     style.setAttribute('data-zappy-runtime', 'ecom-routing');
-    style.setAttribute('data-v', '9');
+    style.setAttribute('data-v', '10');
     style.textContent =
       '@media (min-width: 769px){' +
         'html[dir="ltr"] .nav-container > .nav-brand,body[dir="ltr"] .nav-container > .nav-brand{order:-1!important}' +
@@ -11431,11 +11431,15 @@ async function loadRelatedProducts(currentProduct, t) {
         '.nav-menu .zappy-products-dropdown:hover>.sub-menu,#navMenu .zappy-products-dropdown:hover>.sub-menu,.nav-menu .zappy-products-dropdown:focus-within>.sub-menu,#navMenu .zappy-products-dropdown:focus-within>.sub-menu{transform:translateX(-50%) translateY(0)!important}' +
       '}' +
       '@media (max-width:768px){' +
-        '.nav-menu li:has(.sub-menu),.navbar li:has(.sub-menu),nav li:has(.sub-menu){position:relative!important;max-width:100%!important;overflow:hidden!important}' +
-        '.nav-menu li:has(.sub-menu)>a,.navbar li:has(.sub-menu)>a,nav li:has(.sub-menu)>a,li:has(.sub-menu)>.menu-group-title{width:100%!important;min-width:0!important;padding-inline-end:56px!important;padding-inline-start:0!important;box-sizing:border-box!important}' +
-        '.nav-menu li:has(.sub-menu)>.mobile-submenu-toggle,.navbar li:has(.sub-menu)>.mobile-submenu-toggle,nav li:has(.sub-menu)>.mobile-submenu-toggle{display:flex!important;position:absolute!important;top:0!important;inset-inline-end:4px!important;inset-inline-start:auto!important;width:48px!important;height:44px!important;min-height:44px!important;align-items:center!important;justify-content:center!important;z-index:5!important;pointer-events:auto!important;margin:0!important;padding:0!important;background:transparent!important;border:none!important}' +
-        '.nav-menu .sub-menu,.navbar .sub-menu,nav .sub-menu{min-width:0!important;max-width:100%!important;box-sizing:border-box!important}' +
-        '.sub-menu a,.sub-menu .menu-group-title{white-space:normal!important;overflow-wrap:break-word!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important}' +
+        '.nav-menu li:has(.sub-menu),.navbar li:has(.sub-menu),nav li:has(.sub-menu){display:grid!important;grid-template-columns:minmax(0,1fr) 48px!important;align-items:start!important;max-width:100%!important;width:100%!important;overflow:visible!important;box-sizing:border-box!important}' +
+        'html[dir="rtl"] .nav-menu li:has(.sub-menu),body[dir="rtl"] .nav-menu li:has(.sub-menu),html[dir="rtl"] .navbar li:has(.sub-menu),body[dir="rtl"] .navbar li:has(.sub-menu),html[dir="rtl"] nav li:has(.sub-menu),body[dir="rtl"] nav li:has(.sub-menu){grid-template-columns:48px minmax(0,1fr)!important}' +
+        '.nav-menu li:has(.sub-menu)>a,.navbar li:has(.sub-menu)>a,nav li:has(.sub-menu)>a,li:has(.sub-menu)>.menu-group-title{grid-column:1!important;width:auto!important;min-width:0!important;max-width:100%!important;padding-inline:8px!important;box-sizing:border-box!important;white-space:normal!important;overflow-wrap:anywhere!important;line-height:1.35!important}' +
+        'html[dir="rtl"] .nav-menu li:has(.sub-menu)>a,body[dir="rtl"] .nav-menu li:has(.sub-menu)>a,html[dir="rtl"] .navbar li:has(.sub-menu)>a,body[dir="rtl"] .navbar li:has(.sub-menu)>a,html[dir="rtl"] nav li:has(.sub-menu)>a,body[dir="rtl"] nav li:has(.sub-menu)>a,html[dir="rtl"] li:has(.sub-menu)>.menu-group-title,body[dir="rtl"] li:has(.sub-menu)>.menu-group-title{grid-column:2!important;text-align:right!important}' +
+        '.nav-menu li:has(.sub-menu)>.mobile-submenu-toggle,.navbar li:has(.sub-menu)>.mobile-submenu-toggle,nav li:has(.sub-menu)>.mobile-submenu-toggle{display:flex!important;position:static!important;grid-column:2!important;grid-row:1!important;width:48px!important;height:44px!important;min-height:44px!important;align-items:center!important;justify-content:center!important;z-index:5!important;pointer-events:auto!important;margin:0!important;padding:0!important;background:transparent!important;border:none!important;justify-self:end!important}' +
+        'html[dir="rtl"] .nav-menu li:has(.sub-menu)>.mobile-submenu-toggle,body[dir="rtl"] .nav-menu li:has(.sub-menu)>.mobile-submenu-toggle,html[dir="rtl"] .navbar li:has(.sub-menu)>.mobile-submenu-toggle,body[dir="rtl"] .navbar li:has(.sub-menu)>.mobile-submenu-toggle,html[dir="rtl"] nav li:has(.sub-menu)>.mobile-submenu-toggle,body[dir="rtl"] nav li:has(.sub-menu)>.mobile-submenu-toggle{grid-column:1!important;justify-self:start!important}' +
+        '.nav-menu li:has(.sub-menu)>.sub-menu,.navbar li:has(.sub-menu)>.sub-menu,nav li:has(.sub-menu)>.sub-menu{grid-column:1/-1!important;width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important;margin:0!important}' +
+        '.nav-menu .sub-menu.mobile-expanded,.navbar .sub-menu.mobile-expanded,nav .sub-menu.mobile-expanded{padding:8px 0!important}' +
+        '.sub-menu a,.sub-menu .menu-group-title{display:block!important;width:100%!important;white-space:normal!important;overflow-wrap:anywhere!important;min-width:0!important;max-width:100%!important;box-sizing:border-box!important;padding:10px 8px!important}' +
       '}';
     (document.head || document.documentElement).appendChild(style);
   }
